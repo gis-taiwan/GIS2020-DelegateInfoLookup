@@ -1,8 +1,8 @@
 {
-  "name": "my-gatsby-site",
+  "name": "gis-info",
   "version": "1.0.0",
   "private": true,
-  "description": "My Gatsby Site",
+  "description": "lookup agenda",
   "author": "jchen8tw",
   "keywords": [
     "gatsby"
@@ -15,11 +15,15 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "bootstrap": "^4.5.3",
     "gatsby": "^2.26.1",
     "gatsby-plugin-manifest": "^2.10.0",
     "gatsby-plugin-offline": "^3.8.0",
     "gatsby-plugin-react-helmet": "^3.8.0",
+    "gatsby-source-filesystem": "^2.9.1",
+    "gatsby-transformer-csv": "^2.8.0",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.4.3",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
   }

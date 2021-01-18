@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "My Gatsby Site",
+    title: "GIS Agenda",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -11,5 +11,13 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    `gatsby-transformer-csv`,
   ],
 };
