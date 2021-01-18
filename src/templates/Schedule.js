@@ -43,7 +43,7 @@ const format_data = (data) => {
       },
       {
         EventName: 'Break Time',
-        Time: '9:00-12:00',
+        Time: '12:00-13:00',
         Room: data.Day1_Lunch,
         Building: 'Multi-Purpose Classroom Building',
         EventType: 'break',
@@ -80,14 +80,14 @@ const format_data = (data) => {
       },
       {
         EventName: 'Break Time',
-        Time: '12:00-13:20',
+        Time: '12:00-13:00',
         Room: data.Day1Mentor,
         Building: 'Multi-Purpose Classroom Building',
         EventType: 'break',
       },
       {
         EventName: 'Group Discussion',
-        Time: '13:20-14:30',
+        Time: '13:00-14:00',
         Room: data.Day1Mentor,
         Building: 'Multi-Purpose Classroom Building',
         EventType: 'mentor_discussion',
