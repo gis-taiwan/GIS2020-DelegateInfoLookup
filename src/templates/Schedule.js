@@ -74,7 +74,7 @@ const format_data = (data) => {
       {
         EventName: 'Keynote Speech',
         Time: '09:30-12:00',
-        Room: data.Action_Project,
+        Room: data.Speech_1,
         Building: data.Day2Speech,
         EventType: 'mentor_discussion',
       },
@@ -140,7 +140,7 @@ const format_data = (data) => {
     '1/28': [
       {
         EventName: 'Summit',
-        Time: '09:30-12:00',
+        Time: '09:00-12:00',
         Room: 'GIS NTU Convention Center',
         Building: 'GIS NTU Convention Center',
         EventType: 'mentor_discussion',
