@@ -121,6 +121,7 @@ const IndexPage = () => {
                 as={Link}
                 to={gisCode}
                 block
+                type="submit"
                 variant="primary"
               >
                 Search
