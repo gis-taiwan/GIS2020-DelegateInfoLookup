@@ -64,7 +64,7 @@ const slido_link = (keynote_topic) => {
           href={link}
           target="_blank"
         >
-          Slido Link
+          Slido
         </Button>
       </span>
     </>
