@@ -110,11 +110,11 @@ const IndexPage = () => {
           <Col>
             <Form>
               <Form.Group controlId="formGisCode">
-                <Form.Label>Enter Gis code to search schedule</Form.Label>
+                <Form.Label>Enter GIS code to search schedule</Form.Label>
                 <Form.Control
                   onChange={(e) => setGisCode(e.target.value)}
                   type="text"
-                  placeholder="Enter gis code"
+                  placeholder="Enter GIS code"
                 />
               </Form.Group>
               <Button

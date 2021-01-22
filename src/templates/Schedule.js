@@ -1,6 +1,13 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { Accordion, Container, Row, Col, ListGroup } from 'react-bootstrap'
+import {
+  Accordion,
+  Container,
+  Row,
+  Col,
+  Button,
+  ListGroup,
+} from 'react-bootstrap'
 import DayTable from '../component/DayTable'
 
 export const query = graphql`
@@ -33,6 +40,36 @@ export const query = graphql`
     }
   }
 `
+const slido_link = (keynote_topic) => {
+  let link = ''
+  if (keynote_topic === 'Green Action') {
+    link = 'https://app.sli.do/event/jk9mcftc'
+  } else if (keynote_topic === 'Data Surge') {
+    link = 'https://app.sli.do/event/lt4dn0zk'
+  } else if (keynote_topic === 'Capital Redefined') {
+    link = 'https://app.sli.do/event/xmrmsxsn'
+  } else if (keynote_topic === 'Social Stigma') {
+    link = 'https://app.sli.do/event/yoxbuhol'
+  }
+  return (
+    <>
+      <span style={{ display: 'inline-block', padding: '0.5rem 0' }}>
+        {keynote_topic}
+      </span>
+      <span style={{ display: 'inline-block', float: 'right' }}>
+        <Button
+          variant="outline-light"
+          block
+          as={'a'}
+          href={link}
+          target="_blank"
+        >
+          Slido Link
+        </Button>
+      </span>
+    </>
+  )
+}
 const format_data = (data) => {
   return {
     '1/25': [
@@ -76,7 +113,7 @@ const format_data = (data) => {
       {
         EventName: 'Keynote Speech',
         Time: '09:30-12:00',
-        Room: data.Speech_1,
+        Room: slido_link(data.Speech_1),
         Building: data.Day2Speech,
         EventType: 'mentor_discussion',
       },
@@ -106,7 +143,7 @@ const format_data = (data) => {
       {
         EventName: 'Keynote Speech',
         Time: '09:30-12:00',
-        Room: data.Speech_2,
+        Room: slido_link(data.Speech_2),
         Building: data.Day3Speech,
         EventType: 'mentor_discussion',
       },
