@@ -104,7 +104,7 @@ const format_data = (data) => {
       {
         EventName: 'Mentor Discussion',
         Time: '15:00-17:00',
-        Room: data.Day1Discuss,
+        Room: data.Day1Mentor,
         Building: 'Multi-Purpose Classroom Building',
         EventType: 'mentor_discussion',
       },
@@ -119,17 +119,10 @@ const format_data = (data) => {
       },
       {
         EventName: 'Break Time',
-        Time: '12:00-13:20',
+        Time: '12:00-14:00',
         Room: data.Day2_Lunch,
         Building: 'Multi-Purpose Classroom Building',
         EventType: 'break',
-      },
-      {
-        EventName: 'Group Discussion',
-        Time: '13:20-14:30',
-        Room: data.Day1Mentor,
-        Building: 'Multi-Purpose Classroom Building',
-        EventType: 'mentor_discussion',
       },
       {
         EventName: 'Carnival',
